@@ -1,17 +1,17 @@
-import {ngModule} from '@angular/core';
+import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 
-import{ headerComponent } from 'header/headerComponent';
-import {mainComponent } from 'main/mainComponent';
+import{ headerComponent } from './component/header/headerComponent';
+import { AppComponent } from './component/App/app.Component';
 
-@ngModule({
+@NgModule({
 	imports:[
 	BrowserModule,
 	FormsModule
 	],
-	declarations:[mainComponent, headerComponent],
-	bootstrap:[mainComponent, headerComponent]
+	declarations:[AppComponent, headerComponent],
+	bootstrap:[AppComponent]
 })
 
-export
+export class AppModule{}
